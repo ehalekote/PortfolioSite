@@ -14,7 +14,7 @@ class MainHead extends React.Component {
           HALEKOTE
         </h1>
           <p id="MainHeadSecondary">
-            I am a fullstack, blockchain, and embedded software <span id="bigmoji">👨‍💻</span>.
+            I'm a fullstack, blockchain, and embedded software <span id="bigmoji">👨‍💻</span>.
             <br/>
             If I'm not working, I'm <span id="bigmoji">🧗‍♂️</span> or <span id="bigmoji">🍽️</span>.
             <br/>

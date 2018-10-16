@@ -4,15 +4,16 @@ import PropTypes from "prop-types";
 
 class Background extends React.Component {
 
-  
+//Just FYI I edited the div in 'react-particles-js' file to always be 100% in order to fit the Canvas to the whole screen
+
   render(){
     return (
-      <div>
+      <div className="canvasDiv">
         <Particles 
               params={{
                 "particles": {
                   "number": {
-                    "value": 80,
+                    "value": 60,
                     "density": {
                       "enable": true,
                       "value_area": 800
@@ -122,6 +123,7 @@ class Background extends React.Component {
               }
               style={{
                 width: '100%',
+                height:'100%',
                 }
               }
             />

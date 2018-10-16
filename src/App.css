@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
+#root
+{
+  height:100%;
+}
+
+html, body {
+    overflow: hidden;
+    height:100%;
+}
+
 .app
 {
   position: relative;
+  height:100%;
 }
+
 
 /*Overlays objects above the Particle.js canvas*/
 .text-overlay
@@ -46,7 +58,7 @@
   right: 7%;
   transform: translateX(-50,-50);
   font-family: 'Montserrat', sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   color: gray;
 }
 
@@ -67,4 +79,9 @@ a.Navlink:hover
 {
   color: #d90a0a;
   opacity: 0.5;
+}
+
+.canvasDiv
+{
+height:100%;
 }
