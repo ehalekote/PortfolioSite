@@ -75,6 +75,24 @@ textarea
   height:200px;
 }
 
+.submitBox
+{
+  height:32px;
+  color: gray;
+  background-color: white;
+  margin-top: 27px;
+  width: 40%;
+}
+
+input[type=submit]:hover
+{
+  color: black;
+  font-weight:bold;
+  border: 3px solid black;
+
+}
+
+
 #ContactFormText
 {
   font-family: 'Montserrat', sans-serif;

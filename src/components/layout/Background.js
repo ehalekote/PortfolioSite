@@ -14,9 +14,13 @@ class Background extends React.Component {
     for (var i = 0; i < 6; i++) {
       color += letters[Math.floor(Math.random() * 16)];
     }
+    
     this.setState({
       particleColor: color
     });
+
+    this.props.colorGetter(this.state.particleColor);
+
   }
 
 //Just FYI I edited the div in 'react-particles-js' file to always be 100% in order to fit the Canvas to the whole screen

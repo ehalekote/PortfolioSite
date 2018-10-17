@@ -12,24 +12,42 @@ import ContactForm from "./components/layout/ContactForm";
 
 
 class App extends Component {
-  render() {
-    return (
-	      <div className="app">
-	        <BrowserRouter>
-		        <div>
-		        	<Navbar/>	
-		        	<Route exact path="/" component={MainHead} />
-		        	<Route path="/portfolio" component={Portfolio} />
-		        	<Route path="/contact" component={Contact} />
-		        	<Route path="/contact" component={ContactForm} />
+	constructor(){
+		super();
+		this.state = {
+		  submitColor: "#d90a0a"
+		};
+	}
 
-		        </div>
-	        </BrowserRouter>
-	        	<Background/>
-	      </div>
-	    
-    );
-  }
-}
+	colorGetterHandler = (particleColors) => {
+	  this.setState({
+	    submitColor: particleColors
+	  });
+	}
+
+	render() {
+		return (
+		      <div className="app">
+		        <BrowserRouter>
+			        <div>
+			        	<Navbar/>	
+			        	<Route exact path="/" component={MainHead} />
+			        	<Route path="/portfolio" component={Portfolio} />
+			        	<Route path="/contact" component={Contact} />
+			        	<Route
+						  path='/contact'
+						  render={(props) => <ContactForm submitColor={this.state.submitColor} />}
+						/>
+
+			        </div>
+		        </BrowserRouter>
+		        	<Background
+		        		colorGetter = {this.colorGetterHandler.bind(this)}
+		        	/>
+		      </div>
+		    
+		);
+		}
+	}
 
 export default App;
