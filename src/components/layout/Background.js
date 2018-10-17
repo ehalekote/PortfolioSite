@@ -3,30 +3,44 @@ import Particles from 'react-particles-js';
 import PropTypes from "prop-types";
 
 class Background extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {particleColor: "#d90a0a"};
+  }
+
+  handleClick = () => {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    this.setState({
+      particleColor: color
+    });
+  }
 
 //Just FYI I edited the div in 'react-particles-js' file to always be 100% in order to fit the Canvas to the whole screen
-
   render(){
     return (
-      <div className="canvasDiv">
+      <div className="canvasDiv" onClick={() => this.handleClick()}>
         <Particles 
               params={{
                 "particles": {
                   "number": {
-                    "value": 60,
+                    "value": 20,
                     "density": {
                       "enable": true,
                       "value_area": 800
                     }
                   },
                   "color": {
-                    "value": "#d90a0a"
+                    "value": this.state.particleColor  
                   },
                   "shape": {
                     "type": "circle",
                     "stroke": {
                       "width": 0,
-                      "color": "#000000"
+                      "color": ["#d90a0a"]
                     },
                     "polygon": {
                       "nb_sides": 5
@@ -48,7 +62,7 @@ class Background extends React.Component {
                     }
                   },
                   "size": {
-                    "value": 3,
+                    "value": 6,
                     "random": true,
                     "anim": {
                       "enable": true,
@@ -67,7 +81,7 @@ class Background extends React.Component {
                   "move": {
                     "enable": true,
                     "speed": 2,
-                    "direction": "top",
+                    "direction": "right",
                     "random": false,
                     "straight": false,
                     "out_mode": "out",

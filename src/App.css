@@ -25,11 +25,62 @@ html, body {
 }
 
 /*About Page Header*/
-#MainHead
+#MainLeft
 {
   top: 50%; 
   left: 5%;
   transform: translateY(-50%);
+}
+
+#ContactFormRight
+{
+  top: 50%; 
+  left: 75%;
+  transform: translate(-50%,-50%);
+}
+
+#cform
+{
+  width:470px;
+}
+
+input
+{
+  border: 2px solid gray;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size:19px;
+  color: black;
+
+}
+
+textarea
+{
+  border: 2px solid gray;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+  color: black;
+}
+
+.shortBox
+{
+  height:32px;
+}
+
+.messageBox
+{
+  height:200px;
+}
+
+#ContactFormText
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 27px;
+  color: gray;
+  margin-bottom: 0px;
 }
 
 #MainHeadHeader
@@ -56,7 +107,7 @@ html, body {
 {
   overflow: hidden;
   right: 7%;
-  transform: translateX(-50,-50);
+  transform: translate(-50,-50);
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   color: gray;
@@ -69,15 +120,14 @@ html, body {
 
 }
 
-
 a.Navlink:visited, a.Navlink:link
 {
-  color: gray;
+  color: #91969e;
 }
 
 a.Navlink:hover 
 {
-  color: #d90a0a;
+  color: #000000;
   opacity: 0.5;
 }
 

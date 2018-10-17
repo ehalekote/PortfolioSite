@@ -3,11 +3,10 @@ import PropTypes from "prop-types";
 import '../../App.css';
 
 class MainHead extends React.Component {
-
   
   render(){
     return (
-      <div className="text-overlay" id="MainHead">
+      <div className="text-overlay" id="MainLeft">
         <h1 id="MainHeadHeader">
           ESHAN
           <br/>
