@@ -2,26 +2,12 @@ import React from "react";
 import Particles from 'react-particles-js';
 import PropTypes from "prop-types";
 
-class Background extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {particleColor: "#d90a0a"};
-  }
+class Background extends React.Component { 
 
   handleClick = () => {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    
-    this.setState({
-      particleColor: color
-    });
-
-    this.props.colorGetter(this.state.particleColor);
-
+    this.props.colorGetter()
   }
+  
 
 //Just FYI I edited the div in 'react-particles-js' file to always be 100% in order to fit the Canvas to the whole screen
   render(){
@@ -38,7 +24,7 @@ class Background extends React.Component {
                     }
                   },
                   "color": {
-                    "value": this.state.particleColor  
+                    "value": this.props.backgroundColor  
                   },
                   "shape": {
                     "type": "circle",

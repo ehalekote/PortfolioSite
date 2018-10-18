@@ -11,20 +11,26 @@ import Contact from "./components/layout/Contact";
 import ContactForm from "./components/layout/ContactForm";
 
 
-class App extends Component {
+class App extends Component { 
 	constructor(){
 		super();
 		this.state = {
-		  submitColor: "#d90a0a"
+		  highlightColor: "#d90a0a"
 		};
 	}
 
-	colorGetterHandler = (particleColors) => {
-	  this.setState({
-	    submitColor: particleColors
-	  });
-	}
+	highlightColorSetter = () =>{
+		var letters = '0123456789ABCDEF';
+	    var color = '#';
+	    for (var i = 0; i < 6; i++) {
+	      color += letters[Math.floor(Math.random() * 16)];
+	    }
 
+	    this.setState({
+	    highlightColor: color
+	  });
+
+	}
 	render() {
 		return (
 		      <div className="app">
@@ -36,13 +42,14 @@ class App extends Component {
 			        	<Route path="/contact" component={Contact} />
 			        	<Route
 						  path='/contact'
-						  render={(props) => <ContactForm submitColor={this.state.submitColor} />}
+						  render={(props) => <ContactForm submitColor={this.state.highlightColor} />}
 						/>
 
 			        </div>
 		        </BrowserRouter>
 		        	<Background
-		        		colorGetter = {this.colorGetterHandler.bind(this)}
+		        		colorGetter = {this.highlightColorSetter.bind(this)}
+		        		backgroundColor={this.state.highlightColor}
 		        	/>
 		      </div>
 		    

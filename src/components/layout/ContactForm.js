@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import '../../App.css';
 
-class ContactForm extends React.Component {
+class ContactForm extends React.Component { 
 constructor(props) {
     super(props);
     this.state = {
@@ -15,23 +15,21 @@ constructor(props) {
     };
   }
 
-   handleEnter = () => {
+   handleOver = () => {
       this.setState({
           setColor: this.props.submitColor
-      }, () => {
-          document.querySelector(".submitBox").style.color = this.state.setColor;
-          document.querySelector(".submitBox").style.borderColor = this.state.setColor;
-      })
+      });
     }
 
-    handleLeave = () => {
+    handleOut = () => {
       this.setState({
       setColor: this.state.exitColor
     });
+    
     }
 
     handleClick = () => {
-      alert("Message Sent.");
+      alert("Message sent.");
     }
 
   render(){
@@ -44,7 +42,7 @@ constructor(props) {
             <input type="text" name="Subject" className="shortBox"></input><br/>
             <p id="ContactFormText">Message:</p>
             <textarea rows="4" cols="50" name="Message" className="messageBox"></textarea>
-            <input type="submit" value="Submit" className="submitBox" onMouseEnter={() => this.handleEnter()} onMouseLeave={() => this.handleLeave()} onClick={() => this.handleClick()}></input>
+            <input type="submit" value="Submit" className="submitBox" style={{color: this.state.setColor, borderColor: this.state.setColor}} onMouseOver={() => this.handleOver()} onMouseOut={() => this.handleOut()} onClick={() => this.handleClick()}></input>
            </form>
       </div>
 
