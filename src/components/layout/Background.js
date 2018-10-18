@@ -17,7 +17,7 @@ class Background extends React.Component {
               params={{
                 "particles": {
                   "number": {
-                    "value": 20,
+                    "value": 30,
                     "density": {
                       "enable": true,
                       "value_area": 800
@@ -30,7 +30,7 @@ class Background extends React.Component {
                     "type": "circle",
                     "stroke": {
                       "width": 0,
-                      "color": ["#d90a0a"]
+                      "color": ["#176614"]
                     },
                     "polygon": {
                       "nb_sides": 5

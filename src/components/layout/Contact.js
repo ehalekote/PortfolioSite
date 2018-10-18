@@ -16,6 +16,7 @@ class Contact extends React.Component {
         </h1>
           <p id="MainHeadSecondary">
             Always happy to <span id="bigmoji">📧</span> , <span id="bigmoji">📞</span> , or <span id="bigmoji">💬</span>.
+            <br/>
           </p>
       </div>
 

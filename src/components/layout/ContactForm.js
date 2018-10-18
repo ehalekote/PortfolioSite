@@ -9,7 +9,7 @@ constructor(props) {
     this.state = {
       
       setColor: "gray",
-      enterColor: "#d90a0a",
+      enterColor: "#176614",
       exitColor: "gray"
 
     };

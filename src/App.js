@@ -15,7 +15,7 @@ class App extends Component {
 	constructor(){
 		super();
 		this.state = {
-		  highlightColor: "#d90a0a"
+		  highlightColor: "#176614"
 		};
 	}
 
@@ -36,8 +36,13 @@ class App extends Component {
 		      <div className="app">
 		        <BrowserRouter>
 			        <div>
-			        	<Navbar/>	
-			        	<Route exact path="/" component={MainHead} />
+			        	<Navbar
+			        		submitColor={this.state.highlightColor}
+			        	/>	
+			        	<Route 
+			        		exact path="/" 
+			        		render={(props) => <MainHead submitColor={this.state.highlightColor} />}
+		        		/>
 			        	<Route path="/portfolio" component={Portfolio} />
 			        	<Route path="/contact" component={Contact} />
 			        	<Route
