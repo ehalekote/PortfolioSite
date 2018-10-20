@@ -9,6 +9,7 @@ import Navbar from "./components/layout/Navbar";
 import Portfolio from "./components/layout/Portfolio";
 import Contact from "./components/layout/Contact";
 import ContactForm from "./components/layout/ContactForm";
+import Gallery from "./components/layout/Gallery";
 
 
 class App extends Component { 
@@ -44,6 +45,7 @@ class App extends Component {
 			        		render={(props) => <MainHead submitColor={this.state.highlightColor} />}
 		        		/>
 			        	<Route path="/portfolio" component={Portfolio} />
+			        	<Route path="/portfolio" component={Gallery} />
 			        	<Route path="/contact" component={Contact} />
 			        	<Route
 						  path='/contact'

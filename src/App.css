@@ -153,3 +153,20 @@ a.Navlink:hover
 {
 height:100%;
 }
+
+#gallery
+{
+  top: 50%; 
+  left: 60%;
+  width:500px;
+  height:500px;
+  transform: translate(-50%,-50%);
+}
+
+.galleryCard
+{
+  max-width: 150px;
+  max-height:150px;
+  display: inline-block;
+  margin:5px;
+}
