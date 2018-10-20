@@ -103,7 +103,7 @@ input[type=submit]:hover
 
 #MainHeadHeader
 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; 
   font-size: 100px;
   margin-bottom: 0px;
 
@@ -157,16 +157,34 @@ height:100%;
 #gallery
 {
   top: 50%; 
-  left: 60%;
-  width:500px;
-  height:500px;
+  left: 62%;
+  width:40%;
   transform: translate(-50%,-50%);
 }
 
-.galleryCard
+#galleryRow
 {
-  max-width: 150px;
-  max-height:150px;
-  display: inline-block;
-  margin:5px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+#galleryCol
+{
+  flex: 33%;
+  max-width: 33%;
+
+}
+
+#galleryImgContainer
+{
+  font-size: 0;
+  padding: 4px;
+
+}
+
+#galleryImgContainer img
+{
+  object-fit: cover;
+  max-width:100%;
+}
+
