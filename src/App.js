@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, hashHistory } from "react-router-dom";
 
 //Components
 import Background from "./components/layout/Background";
