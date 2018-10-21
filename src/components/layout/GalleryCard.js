@@ -10,7 +10,7 @@ class GalleryCard extends React.Component {
   	const {
 	      coverPicture,
 	      //title,
-	      //description,
+	      description,
 	      //carouselPictures
 	      //particleColor
 	    } = this.props;
@@ -18,6 +18,9 @@ class GalleryCard extends React.Component {
 	return (
 	<div id="galleryImgContainer">
     	<img src={coverPicture} />
+    	<div class="cardDescription ">
+    		<p class="cardText">{description}</p>
+    	</div>
   	</div>
     );
   }
@@ -27,7 +30,7 @@ class GalleryCard extends React.Component {
 GalleryCard.PropTypes = {
 	//coverPicture: PropTypes.string.isRequired,
 	//title: PropTypes.string.isRequired,
-	//description: PropTypes.string.isRequired,
+	description: PropTypes.string.isRequired,
 	//carouselPictures: PropTypes.arrayOf(PropTypes.string).isRequired,
 	//particleColor: PropTypes.string.isRequired
 };
