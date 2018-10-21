@@ -158,7 +158,7 @@ height:100%;
 {
   top: 50%; 
   left: 62%;
-  width:40%;
+  width:55%;
   transform: translate(-50%,-50%);
 }
 
@@ -170,8 +170,8 @@ height:100%;
 
 #galleryCol
 {
-  flex: 33%;
-  max-width: 33%;
+  flex: 25%;
+  max-width: 25%;
 
 }
 

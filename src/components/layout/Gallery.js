@@ -19,7 +19,7 @@ class Gallery extends React.Component {
             coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Aeroponics.jpg?raw=true"
           />
           <GalleryCard
-            coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/TabbyTax.png?raw=true"
+            coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SmartRock.jpg?raw=true"
           />
           <GalleryCard
             coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Nara.jpg?raw=true"
@@ -30,12 +30,20 @@ class Gallery extends React.Component {
             coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SeaCow.jpg?raw=true"
           />
           <GalleryCard
-            coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SmartRock.jpg?raw=true"
+            coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/balur.png?raw=true"
           />
         </div>
         <div id="galleryCol">
           <GalleryCard
             coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Armada.png?raw=true"
+          />
+          <GalleryCard
+            coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Nara.jpg?raw=true"
+          />
+        </div>
+        <div id="galleryCol">
+          <GalleryCard
+            coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/TabbyTax.png?raw=true"
           />
           <GalleryCard
             coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/balur.png?raw=true"
