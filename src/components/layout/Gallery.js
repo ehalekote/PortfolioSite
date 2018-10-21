@@ -16,29 +16,29 @@ class Gallery extends React.Component {
       <div id="galleryRow">
         <div id="galleryCol">
           <GalleryCard
-            coverPicture="https://getflywheel.com/wp-content/uploads/2018/01/instagram-dimensions-square-flywheel.png"
+            coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Aeroponics.jpg?raw=true"
           />
           <GalleryCard
-            coverPicture="https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a_400x400.jpeg"
+            coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/TabbyTax.png?raw=true"
           />
           <GalleryCard
-            coverPicture="https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a_400x400.jpeg"
-          />
-        </div>
-        <div id="galleryCol">
-          <GalleryCard
-            coverPicture="https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a_400x400.jpeg"
-          />
-          <GalleryCard
-            coverPicture="https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a_400x400.jpeg"
+            coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Nara.jpg?raw=true"
           />
         </div>
         <div id="galleryCol">
           <GalleryCard
-            coverPicture="https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a_400x400.jpeg"
+            coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SeaCow.jpg?raw=true"
           />
           <GalleryCard
-            coverPicture="https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a_400x400.jpeg"
+            coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SmartRock.jpg?raw=true"
+          />
+        </div>
+        <div id="galleryCol">
+          <GalleryCard
+            coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Armada.png?raw=true"
+          />
+          <GalleryCard
+            coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/balur.png?raw=true"
           />
         </div>
       </div>
