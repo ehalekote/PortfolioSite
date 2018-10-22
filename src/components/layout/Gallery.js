@@ -135,6 +135,7 @@ constructor(props) {
                 description="Balur Estate’s 400 acres of pristine coffee plantation originates back to the 1840’s, and the planter’s bungalow turned homestay still retains portions of the original architecture dating back to 1853. We welcome you to spend a few days exploring our small piece of Mudigere coffee, Chikmagalur cuisine, and Indian heritage at beautiful Balur Estate."
                 textColor={this.props.textColor}
                 toggleDescription = {this.handleClick.bind(this)}
+                carouselPictures={["https://github.com/ehalekote/PortfolioSite/blob/master/src/images/balur1.jpg?raw=true","https://github.com/ehalekote/PortfolioSite/blob/master/src/images/balur2.jpg?raw=true","https://github.com/ehalekote/PortfolioSite/blob/master/src/images/balur3.jpg?raw=true","https://github.com/ehalekote/PortfolioSite/blob/master/src/images/balur.jpg?raw=true"]}
               />
             </div>
             <div id="galleryCol">
