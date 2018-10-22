@@ -83,7 +83,7 @@ constructor(props) {
           <h1>{this.state.title}</h1>
           <p>{this.state.description}</p>
           <div className="text-overlay" id="carouselFrame">
-            <Carousel showThumbs={false} autoPlay={true}>
+            <Carousel showThumbs={false} autoPlay={true} showIndicators={false}>
                 {this.createCarousel()}
             </Carousel>
           </div>
@@ -108,9 +108,8 @@ constructor(props) {
                 title="SMART ROCK GEOLOGICAL RESEARCH PCB"
                 description= "This device was designed to log valuable sediment flow data by being placed inside a river. The setup consists of an injection molded high density plastic outer shell which resembles a rock. Inside are 2 custom PCBs designed based off of the arduino platform, and include a full inertial measurement unit, real time clock, and SD card writer to store data."
                 textColor={this.props.textColor}
-                carouselPictures=""
                 toggleDescription = {this.handleClick.bind(this)}
-                carouselPictures="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Aeroponics.jpg?raw=true"
+                carouselPictures={["https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SmartRock1.jpg?raw=true","https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SmartRock.jpg?raw=true"]}
               />
               <GalleryCard
                 coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/ComingSoon.jpg?raw=true"
@@ -127,7 +126,7 @@ constructor(props) {
                 title="SEA COW UNDERWATER ROBOT"
                 description="SeaCow is an underwater remotely operated vehicle completely designed and assembled by UT’s Marine Technology Society for use in competitive robotic settings.  SeaCow is capable of grasping submerged objects with a custom single servo driven gripper, HD video feedback, and two custom superbright LED rings onboard for illumination."
                 textColor={this.props.textColor}
-                carouselPictures=""
+                carouselPictures={["https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SeaCow1.png?raw=true", "https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SeaCow2.jpg?raw=true", "https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SeaCow.jpg?raw=true"]}
                 toggleDescription = {this.handleClick.bind(this)}
               />
               <GalleryCard
@@ -144,7 +143,7 @@ constructor(props) {
                 title="ARMADA PROTOCOL WEBSITE"
                 description="Armada is a permissionless protocol for easily sharing ownership of tokenized assets, including video game items, real estate, and everything in between. Armada seeks to foster global financial inclusion by empowering any person, regardless of wealth, to easily buy into a fraction of a tokenized asset."
                 textColor={this.props.textColor}
-                carouselPictures=""
+                carouselPictures={["https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Armada.jpg?raw=true"]}
                 toggleDescription = {this.handleClick.bind(this)}
               />
               <GalleryCard
@@ -153,6 +152,7 @@ constructor(props) {
                 description="NARA is an interactive alert system on platforms people already use like SMS and Facebook. For emergency management teams, NARA allows for targeted messages to be pushed out based on disaster victims' geography, needs, and self-reported safety statuses. NARA is a 2017 DoD National Security Technology Accelerator Hackathon winner."
                 textColor={this.props.textColor}
                 toggleDescription = {this.handleClick.bind(this)}
+                carouselPictures={["https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Nara1.png?raw=true","https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Nara2.png?raw=true","https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Nara3.png?raw=true","https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Nara.jpg?raw=true"]}
               />
             </div>
             <div id="galleryCol">
