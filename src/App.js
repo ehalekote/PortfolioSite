@@ -45,11 +45,14 @@ class App extends Component {
 			        		render={(props) => <MainHead submitColor={this.state.highlightColor} />}
 		        		/>
 			        	<Route path="/portfolio" component={Portfolio} />
-			        	<Route path="/portfolio" component={Gallery} />
+			        	<Route 
+			        		path="/portfolio" 
+			        		render={(props) => <Gallery textColor={this.state.highlightColor} />}
+		        		/>
 			        	<Route path="/contact" component={Contact} />
 			        	<Route
-						  path='/contact'
-						  render={(props) => <ContactForm submitColor={this.state.highlightColor} />}
+						  	path='/contact'
+						  	render={(props) => <ContactForm submitColor={this.state.highlightColor} />}
 						/>
 
 			        </div>

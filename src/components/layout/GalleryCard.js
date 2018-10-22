@@ -5,21 +5,25 @@ import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } fr
 import '../../App.css';
 
 class GalleryCard extends React.Component { 
+  
+  handleClick = () => {
+    this.props.toggleDescription(this.props.title, this.props.description, this.props.carouselPictures);
+  }
 
   render(){
   	const {
 	      coverPicture,
-	      //title,
+	      title,
 	      description,
-	      //carouselPictures
-	      //particleColor
+	      carouselPictures,
+	      textColor,
 	    } = this.props;
 
 	return (
 	<div id="galleryImgContainer">
     	<img src={coverPicture} />
-    	<div class="cardDescription ">
-    		<p class="cardText">{description}</p>
+    	<div class="cardDescription" style={{border:'4px solid black'}} onClick={() => this.handleClick({title},{description},{carouselPictures})}>
+    		<p class="cardText" style={{color:'black'}}>{title}</p>
     	</div>
   	</div>
     );
@@ -28,11 +32,11 @@ class GalleryCard extends React.Component {
 }
 
 GalleryCard.PropTypes = {
-	//coverPicture: PropTypes.string.isRequired,
-	//title: PropTypes.string.isRequired,
+	coverPicture: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
-	//carouselPictures: PropTypes.arrayOf(PropTypes.string).isRequired,
-	//particleColor: PropTypes.string.isRequired
+	carouselPictures: PropTypes.arrayOf(PropTypes.string).isRequired,
+	textColor: PropTypes.string.isRequired
 };
 
 export default GalleryCard;
