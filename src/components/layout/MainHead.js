@@ -57,7 +57,14 @@ constructor(props) {
       setColorL: this.state.exitColor
     });
     }
-
+    //------------------------------------------
+    handleClick = () => {
+      this.setState({
+        setColorGH: this.state.exitColor,
+        setColorT: this.state.exitColor,
+        setColorL: this.state.exitColor
+      });
+    }
 
 
 
@@ -70,11 +77,11 @@ constructor(props) {
           HALEKOTE
         </h1>
           <p id="MainHeadSecondary">
-            <FontAwesomeIcon icon={['fab', 'github']} size="lg" color={this.state.setColorGH} onMouseOver={() => this.handleOverGH()} onMouseOut={() => this.handleOutGH()}/> 
+            <a href="https://github.com/ehalekote"><FontAwesomeIcon icon={['fab', 'github']} size="lg" color={this.state.setColorGH} onMouseOver={() => this.handleOverGH()} onMouseOut={() => this.handleOutGH()} onClick={() => this.handleClick()}/></a>
               &nbsp;|&nbsp; 
-            <FontAwesomeIcon icon={['fab', 'twitter']} size="lg" color={this.state.setColorT} onMouseOver={() => this.handleOverT()} onMouseOut={() => this.handleOutT()}/> 
+            <a href="https://twitter.com/Eshan___"><FontAwesomeIcon icon={['fab', 'twitter']} size="lg" color={this.state.setColorT} onMouseOver={() => this.handleOverT()} onMouseOut={() => this.handleOutT()} onClick={() => this.handleClick()}/></a> 
               &nbsp;|&nbsp; 
-            <FontAwesomeIcon icon={['fab', 'linkedin']} size="lg" color={this.state.setColorL} onMouseOver={() => this.handleOverL()} onMouseOut={() => this.handleOutL()}/>
+            <a href="https://www.linkedin.com/in/eshanhalekote/"><FontAwesomeIcon icon={['fab', 'linkedin']} size="lg" color={this.state.setColorL} onMouseOver={() => this.handleOverL()} onMouseOut={() => this.handleOutL()} onClick={() => this.handleClick()}/></a>
             <br/> 
             I'm a fullstack, blockchain, and embedded software <span id="bigmoji">👨🏽‍💻</span>.
             <br/>
