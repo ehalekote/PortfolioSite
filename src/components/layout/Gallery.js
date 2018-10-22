@@ -62,7 +62,7 @@ constructor(props) {
     for (let j = 0; j < this.state.images.length; j++) {
       carousel.push(
         <div>
-            <img src={this.state.images[0]} />
+            <img src={this.state.images[j]} /> 
         </div>
       )
     }
@@ -101,7 +101,7 @@ constructor(props) {
                 textColor={this.props.textColor}
                 carouselPictures=""
                 toggleDescription = {this.handleClick.bind(this)}
-                carouselPictures={["https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Aeroponics.jpg?raw=true", "https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Aeroponics.jpg?raw=true"]}
+                carouselPictures={["https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Aeroponics1.jpg?raw=true","https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Aeroponics2.jpg?raw=true", "https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Aeroponics.jpg?raw=true"]}
               />
               <GalleryCard
                 coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SmartRock.jpg?raw=true"
