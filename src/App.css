@@ -188,6 +188,20 @@ height:100%;
   color: gray;
 }
 
+#carouselFrame
+{
+  width: 33vh;
+  top: 50%; 
+  left: 75%;
+  transform: translate(-50%,-50%); 
+
+}
+
+#carouselFrame img
+{
+
+}
+
 #galleryRow
 {
   display: flex;
