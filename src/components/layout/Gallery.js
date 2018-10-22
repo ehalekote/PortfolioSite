@@ -164,7 +164,7 @@ constructor(props) {
                             It compiles simple tax forms for submission to the IRS, all via Facebook Messenger. TabbyTax is optimized for US first-time taxpayers, students, and participants earning
                             under $30,000."
                 textColor={this.props.textColor}
-                carouselPictures=""
+                carouselPictures={["https://github.com/ehalekote/PortfolioSite/blob/master/src/images/TabbyTax1.jpg?raw=true","https://github.com/ehalekote/PortfolioSite/blob/master/src/images/TabbyTax2.jpg?raw=true","https://github.com/ehalekote/PortfolioSite/blob/master/src/images/TabbyTax.jpg?raw=true"]}
                 toggleDescription = {this.handleClick.bind(this)}
               />
               <GalleryCard
