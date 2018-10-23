@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch, hashHistory } from "react-router-dom";
+import { HashRouter } from 'react-router-dom'
+
 
 //Components
 import Background from "./components/layout/Background";
@@ -35,10 +37,11 @@ class App extends Component {
 	render() {
 		return (
 		      <div className="app">
-		        <BrowserRouter>
+		        <HashRouter>
 			        <div>
-			        	<Navbar
-			        		submitColor={this.state.highlightColor}
+			        	<Route
+			        		path="/"
+			        		render={(props) => <Navbar submitColor={this.state.highlightColor} />}
 			        	/>	
 			        	<Route 
 			        		exact path="/" 
@@ -54,13 +57,12 @@ class App extends Component {
 						  	path='/contact'
 						  	render={(props) => <ContactForm submitColor={this.state.highlightColor} />}
 						/>
-
+						<Background
+			        		colorGetter = {this.highlightColorSetter.bind(this)}
+			        		backgroundColor={this.state.highlightColor}
+		        		/>
 			        </div>
-		        </BrowserRouter>
-		        	<Background
-		        		colorGetter = {this.highlightColorSetter.bind(this)}
-		        		backgroundColor={this.state.highlightColor}
-		        	/>
+		        </HashRouter>
 		      </div>
 		    
 		);
