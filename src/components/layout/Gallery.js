@@ -95,24 +95,24 @@ constructor(props) {
           <div id="galleryRow">
             <div id="galleryCol">
               <GalleryCard
-                coverPicture="../images/Aeroponics.jpg"
+                coverPicture="../../../images /Aeroponics.jpg"
                 title="AUTOMATED AEROPONICS GROW SYSTEM"
                 description="Aeroponics uses a nutrient rich mist to provide a plant with the necessary elements to survive. A Raspberry Pi automates the misting cycle and logs images of the process. Some benefits of aeroponics include: a clean environment which reduces the need for  pesticides, conservation of water, and conservation of space. Check out my featured instructable here."
                 textColor={this.props.textColor}
                 carouselPictures=""
                 toggleDescription = {this.handleClick.bind(this)}
-                carouselPictures={["../images/Aeroponics1.jpg","../images/Aeroponics2.jpg", "../images/Aeroponics3.jpg"]}
+                carouselPictures={["../../images /Aeroponics1.jpg","../../images /Aeroponics2.jpg", "../../images /Aeroponics3.jpg"]}
               />
               <GalleryCard
-                coverPicture="../images/SmartRock.jpg"
+                coverPicture="../../images /SmartRock.jpg"
                 title="SMART ROCK GEOLOGICAL RESEARCH PCB"
                 description= "This device was designed to log valuable sediment flow data by being placed inside a river. The setup consists of an injection molded high density plastic outer shell which resembles a rock. Inside are 2 custom PCBs designed based off of the arduino platform, and include a full inertial measurement unit, real time clock, and SD card writer to store data."
                 textColor={this.props.textColor}
                 toggleDescription = {this.handleClick.bind(this)}
-                carouselPictures={["../images/SmartRock.jpg","../images/SmartRock1.jpg"]}
+                carouselPictures={["../../images /SmartRock.jpg","../../images /SmartRock1.jpg"]}
               />
               <GalleryCard
-                coverPicture="../images/ComingSoon.jpg"
+                coverPicture="../../images /ComingSoon.jpg"
                 title="COMING SOON!"
                 description=""
                 textColor={this.props.textColor}
@@ -122,53 +122,53 @@ constructor(props) {
             </div>
             <div id="galleryCol">
               <GalleryCard
-                coverPicture="../images/SeaCow.jpg"
+                coverPicture="../../images /SeaCow.jpg"
                 title="SEA COW UNDERWATER ROBOT"
                 description="SeaCow is an underwater remotely operated vehicle completely designed and assembled by UT’s Marine Technology Society for use in competitive robotic settings.  SeaCow is capable of grasping submerged objects with a custom single servo driven gripper, HD video feedback, and two custom superbright LED rings onboard for illumination."
                 textColor={this.props.textColor}
-                carouselPictures={["../images/SeaCow1.png", "../images/SeaCow2.jpg", "../images/SeaCow.jpg"]}
+                carouselPictures={["../../images /SeaCow1.png", "../../images /SeaCow2.jpg", "../../images /SeaCow.jpg"]}
                 toggleDescription = {this.handleClick.bind(this)}
               />
               <GalleryCard
-                coverPicture="../images/balur.jpg"
+                coverPicture="../../images /balur.jpg"
                 title="BALUR COFFEE ESTATE WEBSITE"
                 description="Balur Estate’s 400 acres of pristine coffee plantation originates back to the 1840’s, and the planter’s bungalow turned homestay still retains portions of the original architecture dating back to 1853. We welcome you to spend a few days exploring our small piece of Mudigere coffee, Chikmagalur cuisine, and Indian heritage at beautiful Balur Estate."
                 textColor={this.props.textColor}
                 toggleDescription = {this.handleClick.bind(this)}
-                carouselPictures={["../images/balur1.jpg","../images/balur2.jpg","../images/balur3.jpg","../images/balur.jpg"]}
+                carouselPictures={["../../images /balur1.jpg","../../images /balur2.jpg","../../images /balur3.jpg","../../images /balur.jpg"]}
               />
             </div>
             <div id="galleryCol">
               <GalleryCard
-                coverPicture="../images/Armada.jpg"
+                coverPicture="../../images /Armada.jpg"
                 title="ARMADA PROTOCOL WEBSITE"
                 description="Armada is a permissionless protocol for easily sharing ownership of tokenized assets, including video game items, real estate, and everything in between. Armada seeks to foster global financial inclusion by empowering any person, regardless of wealth, to easily buy into a fraction of a tokenized asset."
                 textColor={this.props.textColor}
-                carouselPictures={["../images/Armada.jpg"]}
+                carouselPictures={["../../images /Armada.jpg"]}
                 toggleDescription = {this.handleClick.bind(this)}
               />
               <GalleryCard
-                coverPicture="../images/Nara.jpg"
+                coverPicture="../../images /Nara.jpg"
                 title="NATIONAL AUTONOMOUS RELIEF & AID MOBILE APP"
                 description="NARA is an interactive alert system on platforms people already use like SMS and Facebook. For emergency management teams, NARA allows for targeted messages to be pushed out based on disaster victims' geography, needs, and self-reported safety statuses. NARA is a 2017 DoD National Security Technology Accelerator Hackathon winner."
                 textColor={this.props.textColor}
                 toggleDescription = {this.handleClick.bind(this)}
-                carouselPictures={["../images/Nara1.png","../images/Nara2.png","../images/Nara3.png","../images/Nara.png"]}
+                carouselPictures={["../../images /Nara1.png","../../images /Nara2.png","../../images /Nara3.png","../../images /Nara.png"]}
               />
             </div>
             <div id="galleryCol">
               <GalleryCard
-                coverPicture="../images/TabbyTax.jpg"
+                coverPicture="../../images /TabbyTax.jpg"
                 title="TABBY TAX FACEBOOK CHAT BOT"
                 description="TabbyTax is a Facebook MessengerBot created at Hack Princeton in Spring 2017. 
                             It compiles simple tax forms for submission to the IRS, all via Facebook Messenger. TabbyTax is optimized for US first-time taxpayers, students, and participants earning
                             under $30,000."
                 textColor={this.props.textColor}
-                carouselPictures={["../images/TabbyTax1.jpg","../images/TabbyTax2.jpg","../images/TabbyTax.jpg"]}
+                carouselPictures={["../../images /TabbyTax1.jpg","../../images /TabbyTax2.jpg","../../images /TabbyTax.jpg"]}
                 toggleDescription = {this.handleClick.bind(this)}
               />
               <GalleryCard
-                coverPicture="../images/ComingSoon.jpg"
+                coverPicture="../../images /ComingSoon.jpg"
                 title="COMING SOON!"
                 description=""
                 textColor={this.props.textColor}
