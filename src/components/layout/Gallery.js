@@ -95,13 +95,13 @@ constructor(props) {
           <div id="galleryRow">
             <div id="galleryCol">
               <GalleryCard
-                coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Aeroponics.jpg?raw=true"
+                coverPicture="../images/Aeroponics.jpg"
                 title="AUTOMATED AEROPONICS GROW SYSTEM"
                 description="Aeroponics uses a nutrient rich mist to provide a plant with the necessary elements to survive. A Raspberry Pi automates the misting cycle and logs images of the process. Some benefits of aeroponics include: a clean environment which reduces the need for  pesticides, conservation of water, and conservation of space. Check out my featured instructable here."
                 textColor={this.props.textColor}
                 carouselPictures=""
                 toggleDescription = {this.handleClick.bind(this)}
-                carouselPictures={["https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Aeroponics1.jpg?raw=true","https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Aeroponics2.jpg?raw=true", "https://github.com/ehalekote/PortfolioSite/blob/master/src/images/Aeroponics.jpg?raw=true"]}
+                carouselPictures={["../images/Aeroponics1.jpg","../images/Aeroponics2.jpg", "../images/Aeroponics3.jpg"]}
               />
               <GalleryCard
                 coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SmartRock.jpg?raw=true"
