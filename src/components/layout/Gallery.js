@@ -104,12 +104,12 @@ constructor(props) {
                 carouselPictures={["../images/Aeroponics1.jpg","../images/Aeroponics2.jpg", "../images/Aeroponics3.jpg"]}
               />
               <GalleryCard
-                coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SmartRock.jpg?raw=true"
+                coverPicture=""
                 title="SMART ROCK GEOLOGICAL RESEARCH PCB"
                 description= "This device was designed to log valuable sediment flow data by being placed inside a river. The setup consists of an injection molded high density plastic outer shell which resembles a rock. Inside are 2 custom PCBs designed based off of the arduino platform, and include a full inertial measurement unit, real time clock, and SD card writer to store data."
                 textColor={this.props.textColor}
                 toggleDescription = {this.handleClick.bind(this)}
-                carouselPictures={["https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SmartRock1.jpg?raw=true","https://github.com/ehalekote/PortfolioSite/blob/master/src/images/SmartRock.jpg?raw=true"]}
+                carouselPictures={["../images/SmartRock.jpg","../images/SmartRock1.jpg"]}
               />
               <GalleryCard
                 coverPicture="https://github.com/ehalekote/PortfolioSite/blob/master/src/images/ComingSoon.jpg?raw=true"
