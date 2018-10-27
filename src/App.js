@@ -42,9 +42,9 @@ class App extends Component {
 
 		if(isMobile){
 			displayItem = (
-				<div>
-					Hello
-				</div>
+				<h1 id="MainHeadHeader">
+					Sorry, this site doesn't support mobile :/
+		        </h1>
 			)
 		} else {
 			displayItem = (
