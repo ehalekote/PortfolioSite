@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch, hashHistory } from "react-router-dom";
 import { HashRouter } from 'react-router-dom'
+import {isMobile} from 'react-device-detect';
 
 
 //Components
@@ -12,6 +13,7 @@ import Portfolio from "./components/layout/Portfolio";
 import Contact from "./components/layout/Contact";
 import ContactForm from "./components/layout/ContactForm";
 import Gallery from "./components/layout/Gallery";
+
 
 
 class App extends Component { 
@@ -38,7 +40,7 @@ class App extends Component {
 		return (
 		      <div className="app">
 		        <HashRouter>
-		        
+
 			        <div>
 			        	<Route
 			        		path="/"
