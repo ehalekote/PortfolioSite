@@ -37,9 +37,18 @@ class App extends Component {
 
 	}
 	render() {
-		return (
-		      <div className="app">
-		        <HashRouter>
+
+		let displayItem;
+
+		if(isMobile){
+			displayItem = (
+				<div>
+					Hello
+				</div>
+			)
+		} else {
+			displayItem = (
+				<HashRouter>
 
 			        <div>
 			        	<Route
@@ -67,9 +76,16 @@ class App extends Component {
 			        </div>
 
 		        </HashRouter>
-		      </div>
+			)
+		}
+
+
+		return (
+			<div className="app">
+				{displayItem}
+			</div>
 		    
-		);
+			);
 		}
 	}
 
