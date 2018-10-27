@@ -50,7 +50,7 @@ input
   border: 2px solid gray;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  font-size:19px;
+  font-size:1.2vw;
   color: black;
 
 }
@@ -62,7 +62,7 @@ textarea
   width: 100%;
   resize: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 19px;
+  font-size: 1.2vw;
   color: black;
 }
 
@@ -97,7 +97,7 @@ input[type=submit]:hover
 #ContactFormText
 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 27px;
+  font-size: 1.5vw;
   color: gray;
   margin-bottom: 0px;
 }
@@ -173,7 +173,7 @@ a.Navlink:hover
 .descriptionBox h1
 {
   font-family: 'Montserrat', sans-serif; 
-  font-size: 50px;
+  font-size: 2.8vw;
   margin-bottom: 0px;
   max-width: 94%;
 
@@ -183,7 +183,7 @@ a.Navlink:hover
 {
   max-width: 50%;
   font-family: 'Montserrat', sans-serif; 
-  font-size: 20px;
+  font-size: 1.17vw;
   color: gray;
 }
 
@@ -258,7 +258,7 @@ a.Navlink:hover
 
 .cardText {
   color: black;
-  font-size: 26px;
+  font-size: 1.55vw;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   opacity: 1;
