@@ -38,6 +38,7 @@ class App extends Component {
 		return (
 		      <div className="app">
 		        <HashRouter>
+		        
 			        <div>
 			        	<Route
 			        		path="/"
@@ -62,6 +63,7 @@ class App extends Component {
 			        		backgroundColor={this.state.highlightColor}
 		        		/>
 			        </div>
+
 		        </HashRouter>
 		      </div>
 		    
