@@ -83,7 +83,7 @@ constructor(props) {
               &nbsp;|&nbsp; 
             <a href="https://www.linkedin.com/in/eshanhalekote/"><FontAwesomeIcon icon={['fab', 'linkedin']} size="lg" color={this.state.setColorL} onMouseOver={() => this.handleOverL()} onMouseOut={() => this.handleOutL()} onClick={() => this.handleClick()}/></a>
             <br/> 
-            I'm a fullstack, blockchain, and embedded software <span id="bigmoji">👨🏽‍💻</span>.
+            I'm a fullstack and embedded software <span id="bigmoji">👨🏽‍💻</span>.
             <br/>
             If I'm not working, I'm <span id="bigmoji">🧗🏽‍♂️</span> or <span id="bigmoji">🍽️</span>.
             <br/>
